@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""生成《根号M7》手动版课件讲解模板。
+"""生成课件讲解模板。
 
 输入 PDF（首选）或已渲染的页面图片目录，输出：
   · sources/                原始 PDF 与逐页截图（模板引用相对路径）
@@ -158,7 +158,7 @@ def build(title: str, pages, material, out: Path, kind: str, min_chars: int,
 
 
 def main():
-    ap = argparse.ArgumentParser(description="生成根号M7手动版讲解/笔记模板")
+    ap = argparse.ArgumentParser(description="生成课件讲解/笔记模板")
     ap.add_argument("--input", type=Path, help="PDF 文件（PPT 请先导出 PDF）")
     ap.add_argument("--images", type=Path, help="已渲染页面图片目录，按文件名自然排序")
     ap.add_argument("--out", type=Path, required=True, help="输出模板 .md 路径")
