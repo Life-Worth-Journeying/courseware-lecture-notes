@@ -1,10 +1,12 @@
-# 课件讲解与复习笔记 Skill
+# 课件讲解规范与提示词 Skill
 
 把 PPT / PDF 课件写成逐页中文讲解稿，或写成可以直接抄的复习笔记。
 
 Skill 标识：`courseware-lecture-notes`
 
 这是一套从实际课件讲解中提炼出来的 Agent Skill：由当前 Agent 自己读取课件、逐页写作，再用脚本做确定性质检。它把“怎么认小标题、怎么按版面顺序讲、公式和条件怎么保留、复习笔记怎么写得能直接抄”整理成了可重复执行的流程。
+
+这套 Skill 与具体软件无关，不调用软件 API，也不依赖某一次对话的上下文；规范、提示词、模板生成和质检都在仓库里，换一个支持 Agent Skills 的客户端同样可以使用。
 
 ## 它解决什么
 
@@ -23,7 +25,7 @@ Skill 标识：`courseware-lecture-notes`
 ## 仓库结构
 
 ```text
-root-m7-courseware-notes/
+courseware-lecture-notes/
 ├── README.md
 └── skill/
     └── courseware-lecture-notes/
